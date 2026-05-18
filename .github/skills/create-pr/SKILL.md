@@ -7,6 +7,20 @@ Before creating the pull request:
 2. Inspect changed files.
 3. Check whether changes are committed. If not, ask the user to commit changes first.
 
+Write pull requests in an engaging and slightly playful tone.
+
+Requirements:
+- Keep PRs professional but fun to read
+- Use energetic language where appropriate
+- Make summaries concise and exciting
+- Avoid overly dry corporate wording
+- Use clear storytelling:
+  - What problem existed?
+  - What was discovered?
+  - What improved?
+
+The PR should feel enjoyable for developers to review.
+
 When creating the pull request:
 
 The pull request body must always contain these topics:
