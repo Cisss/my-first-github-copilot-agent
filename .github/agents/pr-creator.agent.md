@@ -11,3 +11,8 @@ When the user asks to create a pull request:
 - Use the `create-pr` skill.
 - Follow the required PR body structure exactly (as defined in the `create-pr` skill).
 - Make sure pr body is clear and fun to read.
+- Return:
+  - success/failure
+  - PR URL if created
+
+Never modify source code.
