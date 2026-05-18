@@ -11,17 +11,35 @@ const int start = 1;
 // Yarr! And this be the final number 'fore we drop anchor and call it a day.
 const int end = 10;
 
-// Yarr! A chest o' piratey exclamations to season each number with.
-string[] pirateWords = { "arrrr!", "Ahoy!", "Matey!", "yarr!" };
+// Yarr! A chest o' ten unique piratey exclamations, one fer each number.
+string[] pirateWords =
+{
+    "arrrr!",
+    "Ahoy!",
+    "Matey!",
+    "yarr!",
+    "Shiver me timbers!",
+    "Avast!",
+    "Blimey!",
+    "Yo ho ho!",
+    "Land ho!",
+    "Aye aye!"
+};
+
+// Shuffle the chest so the shouts come out in a random order (Fisher-Yates).
 var random = new Random();
+for (int i = pirateWords.Length - 1; i > 0; i--)
+{
+    int j = random.Next(i + 1);
+    (pirateWords[i], pirateWords[j]) = (pirateWords[j], pirateWords[i]);
+}
 
 // Avast! Here we loop through every number from start to end, inclusive-like,
 // and bellow each one out to the high seas (a.k.a. the console window).
 for (int i = start; i <= end; i++)
 {
-    // Blimey! Pick a random piratey shout to follow the number.
-    string shout = pirateWords[random.Next(pirateWords.Length)];
-    Console.WriteLine($"{i}, {shout}");
+    // Blimey! Each number gets its own unique piratey shout — no repeats!
+    Console.WriteLine($"{i}, {pirateWords[i - start]}");
 }
 
 // Land ho! We've counted to ten — time to make our grand entrance.
