@@ -29,11 +29,11 @@ static void AskWhatYeCanDo()
     Console.WriteLine("What can ye do?");
 
     // These be the five noble trades aboard this here vessel — pick wisely, matey!
-    Console.WriteLine("  1. Keep the Rum flowin' so the barrels never run dry, savvy?");
-    Console.WriteLine("  2. Sniff out buried doubloons 'n glitterin' treasures across the seven seas");
-    Console.WriteLine("  3. Cook up a hearty feast every night so the crew don't mutiny on empty bellies");
-    Console.WriteLine("  4. Swab the deck clean when the sun sinks below the waves");
-    Console.WriteLine("  5. Steer this here ship to every cursed adventure waitin' on the horizon");
+    Console.WriteLine($"  1. {PirateText.OptionRum}");
+    Console.WriteLine($"  2. {PirateText.OptionTreasure}");
+    Console.WriteLine($"  3. {PirateText.OptionCook}");
+    Console.WriteLine($"  4. {PirateText.OptionSwab}");
+    Console.WriteLine($"  5. {PirateText.OptionNavigate}");
 
     // Prompt the scallywag fer their choice — one digit be all we need.
     Console.Write("Yer pick (1-5), matey: ");
@@ -42,12 +42,12 @@ static void AskWhatYeCanDo()
     // Hoist the matchin' reply from the pirate's locker.
     string response = choice switch
     {
-        "1" => "Arrrrr, a Rum-keeper! I can use a lad like that — but mind ye, ye'll be helpin' empty the bottles too. Hehe!",
-        "2" => "Shiver me timbers! A treasure-sniffer ye be? Then mark me words, half o' what ye dig up belongs to the Cap'n, savvy?",
-        "3" => "Yo-ho-ho! A cook, eh? If yer stew tastes like bilge water, ye'll be walkin' the plank by sundown, matey!",
-        "4" => "Aye, a deck-swabber! 'Tis honest work for an honest scallywag — just don't slip on me peg leg, ye barnacle!",
-        "5" => "Blimey! A navigator! Steer us true 'n I'll share me grog — steer us wrong 'n the kraken gets a snack!",
-        _   => "Arrr, ye landlubber! That be no proper answer — pick a number 'tween 1 'n 5 or walk the plank, ye scurvy dog!"
+        "1" => PirateText.ResponseRum,
+        "2" => PirateText.ResponseTreasure,
+        "3" => PirateText.ResponseCook,
+        "4" => PirateText.ResponseSwab,
+        "5" => PirateText.ResponseNavigate,
+        _   => PirateText.ResponseInvalid
     };
 
     // Bellow the response across the deck fer all to hear.
