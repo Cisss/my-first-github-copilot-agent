@@ -1,0 +1,23 @@
+﻿<!-- Ahoy! This here be the ship's manifest (the .csproj) for our CountingApp.
+     It tells the .NET shipwrights how to build our trusty vessel. Arrr! -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Yarr! 'Exe' means this here project be a standalone executable, ready
+         to set sail from the command line whenever the cap'n gives the word. -->
+    <OutputType>Exe</OutputType>
+
+    <!-- Shiver me timbers! We be targetin' .NET 10 — the finest framework
+         currently flyin' the Jolly Roger. -->
+    <TargetFramework>net10.0</TargetFramework>
+
+    <!-- Avast! Implicit usings save us swabbies from typin' the same
+         'using' lines o'er and o'er. A fine convenience for any pirate coder. -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Blimey! Nullable reference types be enabled — keeps null-shaped
+         krakens from sneakin' aboard our ship undetected. -->
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

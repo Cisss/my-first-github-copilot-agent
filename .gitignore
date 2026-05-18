@@ -1,0 +1,9 @@
+# Arrr! These be the artifacts no pirate wants tracked in the ship's log.
+# Build booty — generated fresh each voyage, no need to stow it in the hold.
+bin/
+obj/
+
+# Yarr! IDE trinkets and other sundries best left ashore.
+.vs/
+*.user
+*.suo
