@@ -1,0 +1,17 @@
+{
+  "name": "treasure-api",
+  "version": "1.0.0",
+  "description": "A simple Express API for tracking pirate treasure",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT"
+}
